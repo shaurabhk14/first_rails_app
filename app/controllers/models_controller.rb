@@ -56,7 +56,7 @@ class ModelsController < ApplicationController
   def destroy
     @model.destroy
     respond_to do |format|
-      format.html { redirect_to models_url, notice: 'Model was successfully destroyed.' }
+      format.html { redirect_to models_url, notice: 'Model was successfully destroyed/deleted.' }
       format.json { head :no_content }
     end
   end
